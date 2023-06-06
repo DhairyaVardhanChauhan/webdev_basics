@@ -1,0 +1,4 @@
+display -> inline,inline-block,block
+1)block->take up the entire line
+2)inline-block->take the max space required
+3)inline ->exists in the line eg: strong,span tags

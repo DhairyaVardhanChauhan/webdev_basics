@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        .thumbnail{
+            width: 300px;
+            height: 300px; /*to use object-style and obj-fit you must use height and width*/
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+            object-fit: cover;  /*use "contain" to fit the full image makes the image shrink */
+            object-position: right; /*when we use "contain" we can use top and bottom to center the image in the container*/
+        }
+    </style>
+</head>
+<body>
+    <img class = "thumbnail" src="tumbnails/thumbnail-1.webp" alt="">
+</body>
+</html>
