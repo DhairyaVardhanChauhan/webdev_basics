@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+        }
+
+        .main2{
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: end;
+        }
+        .main3{
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: space-between ; /*sees horizontal alignment*/
+        }
+        .main4 {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: space-between ; /*sees horizontal alignment*/
+            align-items: center ; /*sees vertical alignment*/
+        }
+        .d1{
+            background-color: pink;
+        }
+        .d2{
+            background-color: lightblue;
+        }
+        .d3{
+            background-color: pink;
+            width: 100px;
+        }
+        .d4{
+            background-color: lightblue;
+            flex: 1;
+        }
+        .d5{
+            background-color: pink;
+            flex: 2;
+        }
+        .d6{
+            background-color: pink;
+            width: 100px;
+            height: 100px;            
+        }
+        .d7{
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+        }
+        .d8{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+        .d9{
+            background-color: pink;
+            width: 100px;         
+        }
+        .d10{
+            background-color: lightblue;
+            width: 100px;
+        }
+        .d11{
+            background-color: pink;
+            width: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="d1">div 1</div>
+        <div class="d2">div 2 <p>flexbox align items vertically if the size increases</p></div>
+    </div>
+
+    <div class="main">
+        <div class="d3">100px</div>
+        <div class="d4">flex1<p>flex box flex1 = 1fr in grid</p></div>
+        <div class="d5">flex2<p>flex box flex2 = 2fr in grid</p></div>
+    </div>
+
+    <div class="main2">
+        <div class="d6">100px</div>
+        <div class="d7">100px</div>
+        <div class="d8">100px</div>
+    </div>
+
+    <div class="main3">
+        <div class="d6">100px</div>
+        <div class="d7">100px</div>
+        <div class="d8">100px</div>
+    </div>
+
+    <div class="main4">
+        <div class="d9">100px</div>
+        <div class="d10">100px</div>
+        <div class="d11">100px</div>
+    </div>
+</body>
+</html>
+
+<!-- In case of grids the layout is rigid means we define the column widths and arrange elements accordingly but in flexbox nothing like this is required -->

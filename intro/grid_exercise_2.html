@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: Arial;
+            margin-left: 8px;
+        }
+        .id-box{
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.35);
+            width: 100%;
+            padding-top: 1px;
+        }
+        .profile-picture{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .name{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        .friends{
+            margin-top: 6px;
+            color: rgb(96, 96, 96);
+        }   
+        .add-button{
+            background-color: #1d9bf0;
+            color: white;
+            border-radius: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial;
+            /* font-weight: bold; */
+            border-style: none;
+            width: 115px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            margin-left: 8px;
+            
+        }
+        .user-img{
+            height: 28px;
+            width: 28px;    
+            object-fit: cover;
+            border-radius: 14px;
+            vertical-align: middle;
+            margin-right: 4px;
+            margin-left: 10px;
+        }
+        .grid-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .mutual-row-grid{
+            display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center;
+            column-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+    <div class="main">
+        <div class="profile">
+            <img class="profile-picture" src="exercise_image/cat.jpg" alt="">
+        </div>
+        <div class="id-box">
+            <p class="name">Oliver</p>
+            <div class="mutual-row-grid">
+                <img  class="user-img" src="exercise_image/dog2.jpg" alt="">
+                <p class="friends">2 mutual friends</p>
+            </div>
+            <button class="add-button">Add friend</button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="profile">
+            <img class="profile-picture" src="exercise_image/cat2.jpg" alt="">
+        </div>
+        <div class="id-box">
+            <p class="name">Mimi</p>
+            <div class="mutual-row-grid">
+                <img  class="user-img" src="exercise_image/dog2.jpg" alt="">
+                <p class="friends">3 mutual friends</p>
+            </div>
+            <button class="add-button">Add friend</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="profile">
+            <img class="profile-picture" src="exercise_image/dog.jpg" alt="">
+        </div>
+        <div class="id-box">
+            <p class="name">Rex</p>
+            <div class="mutual-row-grid">
+                <img  class="user-img" src="exercise_image/dog2.jpg" alt="">
+                <p class="friends">4 mutual friends</p>
+            </div>
+            <button class="add-button">Add friend</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
