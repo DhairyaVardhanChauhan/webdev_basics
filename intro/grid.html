@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
 
     <style>
+        body{
+            padding-bottom: 1000px;
+        }
         .main{
             display: grid;
             grid-template-columns: 100px 100px 200px ;
@@ -21,6 +24,16 @@
             display: grid;
             grid-template-columns: 100px 1fr 2fr ;
             margin-bottom: 20px ;
+        }
+
+        .side3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            margin-bottom: 20px ;
+            height: 400px;
+            column-gap: 20px;
+            row-gap: 40px;
+
         }
 
         .d1{
@@ -64,6 +77,15 @@
         <div class="d1">100px</div>
         <div class="d2">1fr</div> <!-- the fr value means the remaining space-->
         <div class="d1">2fr</div> <!-- 1 fr takes 1/3 of the remaing and 2fr takes 2/3 here-->
+    </div>
+
+    <div class="side3"> 
+        <div class="d1">1fr</div>
+        <div class="d2">2fr</div> 
+        <div class="d1">3fr</div> 
+        <div class="d2">4fr</div>
+        <div class="d1">5fr</div> 
+        <div class="d2">6fr</div> 
     </div>
 
 
