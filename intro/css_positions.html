@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 3000px; 
+            padding-top: 60px;/*add padding at the top of the body so that the div is not overlapped by the navbar*/
+        }
+        .header{
+            background-color: black;
+            color: white; 
+            position: fixed;
+            top: 0px; /*position from the top of the page*/
+            left: 0px;
+            right: 0px; /*if we set two opposite properties the element will streatch*/
+            height: 50px; /*top-bottom-left-right are resized with the page but height doesn't*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">header</div>
+    <div style="background-color: pink; width: 200px;height: 200px;">div1</div>
+    <div style="background-color: lightblue; width: 200px;height: 200px;">div2</div>
+</body>
+</html>
