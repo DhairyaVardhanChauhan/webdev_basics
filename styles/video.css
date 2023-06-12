@@ -34,6 +34,7 @@
 
 .thumbnail-row{
     margin-bottom: 12px;
+    position: relative;
 }
 
 .video-author,.video-stats{
@@ -49,4 +50,17 @@
     grid-template-columns: 1fr 1fr 1fr ;
     column-gap: 15px;
     row-gap: 40px;
+}
+
+.video-time{
+    background-color: black;
+    padding:4px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 18px;
+    right: 10px;
+    font-family: Roboto,Arial;
+    font-size: 16px;
+    border-radius: 2px;
 }

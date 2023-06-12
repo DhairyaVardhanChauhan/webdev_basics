@@ -9,6 +9,7 @@
         body{
             height: 3000px; 
             padding-top: 60px;/*add padding at the top of the body so that the div is not overlapped by the navbar*/
+            padding-left: 120px;
         }
         .header{
             background-color: black;
@@ -18,6 +19,7 @@
             left: 0px;
             right: 0px; /*if we set two opposite properties the element will streatch*/
             height: 50px; /*top-bottom-left-right are resized with the page but height doesn't*/
+            z-index: 1;/*elements with higher z index apper on the topmost layer of the page eg: when we create absolute element it comes above our navbar hence to remove it we use z index*/
         }
         .sidebar{
             background-color: green;
@@ -32,8 +34,15 @@
 </head>
 <body>
     <div class="header">header</div>
-    <div class="sidebar">sidebar</div>
+    <div class="sidebar">
+        sidebar
+        <div style="background-color: rgb(255, 0, 0); color: white; position: absolute; top: 0px; right: 0px;">X</div>
+    </div>
+    <div style="background-color: rgb(255, 0, 0); color: white; position: absolute;">absolute</div> <!--places the elements on the top of the page not on the window watch 5:09:00-->
     <div style="background-color: pink; width: 200px;height: 200px;">div1</div>
-    <div style="background-color: lightblue; width: 200px;height: 200px;">div2</div>
+    <div style="background-color: lightblue; width: 200px;height: 200px; position: relative;">
+        div2
+        <div style="background-color: black; color: white; position: absolute; bottom: 22px; right: 15px;">5:00</div>
+    </div>
 </body>
 </html>
