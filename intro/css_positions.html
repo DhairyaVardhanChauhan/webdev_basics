@@ -19,11 +19,20 @@
             right: 0px; /*if we set two opposite properties the element will streatch*/
             height: 50px; /*top-bottom-left-right are resized with the page but height doesn't*/
         }
+        .sidebar{
+            background-color: green;
+            position: fixed;
+            top: 50px;
+            bottom: 0px;
+            left: 0px;
+            width: 100px;
+        }
     </style>
 
 </head>
 <body>
     <div class="header">header</div>
+    <div class="sidebar">sidebar</div>
     <div style="background-color: pink; width: 200px;height: 200px;">div1</div>
     <div style="background-color: lightblue; width: 200px;height: 200px;">div2</div>
 </body>
