@@ -44,6 +44,31 @@
 .youtube-logo{
     height: 20px;
 }
+
+.search-button .tooltip,
+.voice-search-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; /*when you hover a larger selector the inside algo works it removes it check 6:01:00 to know more*/
+    white-space: nowrap;/*now the text wont wrap*/
+} 
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+
+}
+
 .search-button{
     height: 39px;
     width: 66px;
@@ -53,6 +78,11 @@
     border-style: solid;
     margin-left: -1px;
     margin-right: 10px;
+}
+.search-button,.voice-search-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .voice-search-button{
