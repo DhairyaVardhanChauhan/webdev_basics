@@ -97,9 +97,13 @@
     height: 36px;
     padding-left: 12px;
     font-size: 16px;
-    border-style: solid;
+    /* border-style: solid;
     border-color: rgb(184, 181, 181);
-    border-width: 1px ;
+    border-width: 1px ; */
+
+    /* All the above can be written as*/
+    border: 1px solid rgb(184, 181, 181);
+
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(80, 80, 80, 0.15);
     width: 0px;
