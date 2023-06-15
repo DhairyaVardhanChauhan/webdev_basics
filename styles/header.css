@@ -23,7 +23,6 @@
     display: flex;
     align-items: center;
     flex: 1;
-    margin-left: 70px;
     max-width: 500px; /*while shrinking/expanding the max width cannot be more than 300px*/
 }
 .right-section{
@@ -32,7 +31,6 @@
     width: 180px;
     margin-left: 35px;
     justify-content: space-between;
-    margin-right: 20px;
     flex-shrink: 0; /*the items dont shrink when window shrinks*/
 
 }
